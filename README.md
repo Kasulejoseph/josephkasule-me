@@ -1,2 +1,2 @@
-# josephkasule.me
+# My profile
 https://kasulejoseph.github.io/josephkasule.me/
