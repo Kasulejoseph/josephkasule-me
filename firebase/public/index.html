@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Welcome to Firebase Hosting</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.2.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.2.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.2.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.2.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.2.3/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/6.2.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBQapnLbTI7dnIqDd9mXjqNnxhF-UzUBKo",
+    authDomain: "kasule-profile.firebaseapp.com",
+    databaseURL: "https://kasule-profile.firebaseio.com",
+    projectId: "kasule-profile",
+    storageBucket: "kasule-profile.appspot.com",
+    messagingSenderId: "730434648869",
+    appId: "1:730434648869:web:a22ccd8917bd287c",
+    storageBucket: 'https://kasule-profile.firebaseio.com'
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="app.js">
+    </script>
+    <div class="row">
+      <div class="col s8">
+    <h1 id="title"></h1>
+    <div class="row">
+        <div class="input-field col s4">
+            <input onchange="updateMovie(event)" placeholder="movie" >
+        </div>
+      </div>
+    <button class ="waves-effect waves-light btn blue" onclick="googleLogin()">
+      Google
+      <i class="material-icons right">send</i>
+    </button>
+  </div>
+        <h4 class="col s6 offset-s6"> products</h4> 
+        <div id="product" class="col s6 offset-s6"></div>
+        <div class="col s6">
+            <h4>Storage upload</h4>
+            <input type="file" name="image" id="imageUpload" onchange="uploadFile(this.files)">
+            <hr>
+            <img src="" id="imgUpload" sizes="100vw">
+        </div>
+        
+  </div>
+      </div>
+  </body>
+
+</html>
