@@ -4485,14 +4485,15 @@ input[type="button"].btn-block {
 
 .badge {
   display: inline-block;
+  margin-top: 0.6em;
   padding: 0.25em 0.4em;
-  font-size: 75%;
+  font-size: 86%;
   font-weight: 700;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 6px;
 }
 
 .badge:empty {
@@ -4507,12 +4508,11 @@ input[type="button"].btn-block {
 .badge-pill {
   padding-right: 0.6em;
   padding-left: 0.6em;
-  border-radius: 10rem;
 }
 
 .badge-primary {
   color: #fff;
-  background-color: #434E5E;
+  background-color: #333959;
 }
 
 .badge-primary[href]:hover, .badge-primary[href]:focus {
@@ -4523,7 +4523,7 @@ input[type="button"].btn-block {
 
 .badge-secondary {
   color: #fff;
-  background-color: #58677c;
+  background-color: #333959;
 }
 
 .badge-secondary[href]:hover, .badge-secondary[href]:focus {
@@ -8550,7 +8550,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-header {
-  background: rgb(125, 124, 129);
+  background: #333959;
   color: rgba(255, 255, 255, 0.9);
   border: 1px solid #888888;
   height: 220px;
